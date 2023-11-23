@@ -1,6 +1,5 @@
-# linux_essentials
-Learn to manage computers on-premises and in the cloud
-URL: https://www.softwaretutorialservices.com/course/linux-essentials
+# Linux Essentials: Learn to manage computers on-premises and in the cloud
+Courseware Access: https://www.softwaretutorialservices.com/course/linux-essentials
 
 this course covers six linux topics or lessons.  Each lesson has its own lab exercise that can be done using your own computer or free resources on the Internet.  You will learn about these resources in lesson 1.  Lesson 2 will show you  how to use the built-in help features to use commands even if you are new to them.​
 
