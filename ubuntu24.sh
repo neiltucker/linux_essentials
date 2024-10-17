@@ -3,7 +3,8 @@
 ## Prep system (Verify Python is already installed: python3 --version)
 sudo apt-get update && apt-get autoremove && apt-get autoclean
 # sudo apt install python3 -y 
-# sudo apt install chromium-browser -y
+sudo apt install python3-pip -y
+sudo apt install chromium-browser -y
 
 ## Git
 sudo apt install git-all -y
