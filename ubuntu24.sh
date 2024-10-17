@@ -26,4 +26,11 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ## Download Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 # reboot
+# ollama run llama3
+
+## Install Open WebUI
+pip install open-webui
+open-webui serve
+# http://localhost:8080
+
 
