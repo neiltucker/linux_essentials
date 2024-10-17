@@ -2,7 +2,7 @@
 autoinstall:
   version: 1
   identity:
-    hostname: lab10
+    hostname: lab01
     username: Neil
     password: "Password#1234"
   storage:
