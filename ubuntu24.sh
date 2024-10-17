@@ -1,7 +1,9 @@
 ### Setup for local LLM on Ubuntu
 
-## Prep system
-sudo apt-get update && sudo apt-get -y upgrade && apt-get autoremove && apt-get autoclean
+## Prep system (Verify Python is already installed: python3 --version)
+sudo apt-get update && apt-get autoremove && apt-get autoclean
+# sudo apt install python3 -y 
+# sudo apt install chromium-browser -y
 
 ## Git
 sudo apt install git-all -y
@@ -23,5 +25,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 ## Download Ollama
 curl -fsSL https://ollama.com/install.sh | sh
-
+# reboot
 
