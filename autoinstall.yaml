@@ -1,28 +1,26 @@
+#cloud-config
 autoinstall:
   version: 1
   identity:
     hostname: lab10
-    username: adminz
+    username: Neil
     password: "Password#1234"
   storage:
-    layout:
-      name: basic
-      grow: yes
-      match:
-        size: 50GB
     config:
       - type: disk
         id: disk0
         path: /dev/sda
-        wipe: superblock, net
+        wipe: superblock
+        ptable: gpt
       - type: partition
-        id: root
-        size: 50GB
-        primary: yes
+        id: partition0
+        device: disk0
+        size: 102G
+        flag: boot
       - type: partition
-        id: root_data
-        size: 0
-        primary: yes
+        id: partition1
+        device: disk0
+        size: -1
   packages:
     - ubuntu-desktop
     - libreoffice
