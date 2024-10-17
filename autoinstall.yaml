@@ -2,25 +2,35 @@
 autoinstall:
   version: 1
   identity:
-    hostname: lab01
+    hostname: lab10
     username: Neil
-    password: "Password#1234"
+    password: "Password!1234"
   storage:
     config:
       - type: disk
-        id: disk0
-        path: /dev/sda
+        id: disk2
+        path: /dev/sdc
         wipe: superblock
+        preserve: false
+        grub_device: true
         ptable: gpt
       - type: partition
         id: partition0
-        device: disk0
-        size: 102G
-        flag: boot
+        device: disk2
+        size: 1G
+        flag: bios_grub
       - type: partition
         id: partition1
-        device: disk0
-        size: -1
+        device: disk2
+        size: 102G
+      - type: format
+        id: format0
+        volume: partition1
+        fstype: ext4
+      - type: mount
+        id: mount0
+        device: format0
+        path: /
   packages:
     - ubuntu-desktop
     - libreoffice
