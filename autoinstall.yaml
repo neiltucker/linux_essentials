@@ -1,0 +1,36 @@
+#cloud-config
+
+autoinstall:
+  version: 1
+  identity:
+    hostname: lab10
+    username: adminz
+    password: "Password#1234"
+  storage:
+    layout:
+      name: basic
+      grow: yes
+      match:
+        size: 50GB
+    config:
+      - type: disk
+        id: disk0
+        path: /dev/sda
+        wipe: superblock, net
+      - type: partition
+        id: root
+        size: 50GB
+        primary: yes
+      - type: partition
+        id: root_data
+        size: 0
+        primary: yes
+  packages:
+    - ubuntu-desktop
+    - libreoffice
+    - firefox
+    - snap-store
+    - snap-desktop-integration
+    - gnome
+    - gtk-common-themes
+    - chromium

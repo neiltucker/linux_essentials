@@ -4,6 +4,8 @@
 sudo apt-get update && apt-get autoremove && apt-get autoclean
 # sudo apt install python3 -y 
 sudo apt install python3-pip -y
+sudo pip install notebook
+sudo pip install jupyterlab
 sudo apt install chromium-browser -y
 
 ## Git
