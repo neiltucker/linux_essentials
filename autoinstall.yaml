@@ -1,8 +1,15 @@
+profile
+qwen2.5-coder:latest 18/10/2024 11:11
+Absolutely! You can add a partition for swap space in your autoinstall.yaml file. Below is the revised version of your script with an additional partition for swap space:
+
+
+yaml
+Copy Code
 #cloud-config
 autoinstall:
   version: 1
   identity:
-    hostname: lab01
+    hostname: lab10
     username: Neil
     password: "Password!1234"
   storage:
@@ -24,10 +31,20 @@ autoinstall:
         device: disk2
         size: 102G
         fstype: ext4
+      - type: partition
+        id: partition2
+        device: disk2
+        size: 20G
+        fstype: swap
       - type: mount
         id: mount0
         device: partition1
         path: /
+      - type: mount
+        id: mount1
+        device: partition2
+        path: none
+        options: "sw"
   packages:
     - ubuntu-desktop
     - libreoffice
