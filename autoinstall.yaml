@@ -23,13 +23,10 @@ autoinstall:
         id: partition1
         device: disk2
         size: 102G
-      - type: format
-        id: format0
-        volume: partition1
         fstype: ext4
       - type: mount
         id: mount0
-        device: format0
+        device: partition1
         path: /
   packages:
     - ubuntu-desktop
@@ -40,3 +37,17 @@ autoinstall:
     - gnome
     - gtk-common-themes
     - chromium
+
+# Additional configuration for enabling sudo access for the user
+users:
+  - name: Neil
+    password: "Password!1234"
+    groups: [sudo]
+    shell: /bin/bash
+
+# Ensure that the hostname is set correctly and applied immediately
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: true
