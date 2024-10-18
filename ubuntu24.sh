@@ -1,5 +1,4 @@
 ### Setup for local LLM on Ubuntu 
-### curl -fsSL https://raw.githubusercontent.com/neiltucker/linux_essentials/refs/heads/main/ubuntu24.sh | sh
 
 ## Prep system (Verify Python is already installed: python3 --version)
 sudo apt-get update && apt-get autoremove && apt-get autoclean
