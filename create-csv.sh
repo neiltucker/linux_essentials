@@ -1,5 +1,6 @@
 #!/bin/sh
 # curl https://raw.githubusercontent.com/neiltucker/linux_essentials/main/create-csv.sh | sh
+
 set -e
 
 # Create an employees records comma-delimited file (ID, FirstName, LastName)
