@@ -1,10 +1,3 @@
-profile
-qwen2.5-coder:latest 18/10/2024 11:11
-Absolutely! You can add a partition for swap space in your autoinstall.yaml file. Below is the revised version of your script with an additional partition for swap space:
-
-
-yaml
-Copy Code
 #cloud-config
 autoinstall:
   version: 1
