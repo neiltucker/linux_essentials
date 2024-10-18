@@ -1,4 +1,5 @@
-### Setup for local LLM on Ubuntu
+### Setup for local LLM on Ubuntu 
+### curl -fsSL https://raw.githubusercontent.com/neiltucker/linux_essentials/refs/heads/main/ubuntu24.sh | sh
 
 ## Prep system (Verify Python is already installed: python3 --version)
 sudo apt-get update && apt-get autoremove && apt-get autoclean
@@ -35,5 +36,4 @@ curl -fsSL https://ollama.com/install.sh | sh
 pip install open-webui
 open-webui serve
 # http://localhost:8080
-
 
