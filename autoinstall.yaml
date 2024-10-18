@@ -9,9 +9,9 @@ Copy Code
 autoinstall:
   version: 1
   identity:
-    hostname: lab10
-    username: Neil
-    password: "Password!1234"
+    hostname: lab01
+    username: neil
+    password: "Password!234"
   storage:
     config:
       - type: disk
@@ -57,8 +57,8 @@ autoinstall:
 
 # User and sudo configuration
 users:
-  - name: Neil
-    password: "Password!1234"
+  - name: neil
+    password: "Password!234"
     groups: [sudo]
     shell: /bin/bash
 
