@@ -38,14 +38,14 @@ autoinstall:
     - gtk-common-themes
     - chromium
 
-# Additional configuration for enabling sudo access for the user
+# User and sudo configuration
 users:
   - name: Neil
     password: "Password!1234"
     groups: [sudo]
     shell: /bin/bash
 
-# Ensure that the hostname is set correctly and applied immediately
+# Network settings
 network:
   version: 2
   ethernets:
