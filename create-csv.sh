@@ -1,5 +1,5 @@
 #!/bin/sh
-# curl -sSL https://raw.githubusercontent.com/neiltucker/linux_essentials/main/create-csv.sh | sh
+# curl https://raw.githubusercontent.com/neiltucker/linux_essentials/main/create-csv.sh | sh
 
 set -e
 echo "ID,FirstName,LastName" > employees.csv
