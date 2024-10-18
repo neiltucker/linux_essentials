@@ -1,6 +1,7 @@
 #!/bin/sh
+# curl -sSL https://raw.githubusercontent.com/neiltucker/linux_essentials/main/create-csv.sh | sh
 
-cat << EOF > employees.csv
+cat << 'EOF' > employees.csv
 ID,FirstName,LastName
 1001,John,Williams
 1002,Bill,Brown
